@@ -18,7 +18,7 @@ const Projects = ({ isDark, t, projects }) => {
                 <img 
                   src={project.image} 
                   alt={project.title} 
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" 
+                  className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500" 
                 />
                 {project.comingSoon && (
                   <div className="absolute inset-0 bg-black/70 flex items-center justify-center backdrop-blur-sm">

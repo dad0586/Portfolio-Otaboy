@@ -35,24 +35,24 @@ export const getLanguageSkills = (language) => [
 
 export const getProjects = (language) => [
   { 
-    title: 'Bright Gallery', 
+    title: language === 'uz' ? 'Bright Gallery' : language === 'en' ? 'Bright Gallery' : 'Брайт Галери', 
     description: language === 'uz' ? 'Zamonaviy gallery platformasi' : language === 'en' ? 'Modern gallery platform' : 'Современная галерея', 
     link: 'https://brightgalleryuz.com', 
-    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop' 
+    image: 'https://brightgalleryuz.com/main-logo.svg' 
   },
   { 
-    title: language === 'uz' ? 'Loyiha 2' : language === 'en' ? 'Project 2' : 'Проект 2', 
-    description: language === 'uz' ? 'Tez orada' : language === 'en' ? 'Coming soon' : 'Скоро', 
-    link: '#', 
-    image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&h=600&fit=crop', 
-    comingSoon: true 
+    title: language === 'uz' ? 'Elisof' : language === 'en' ? 'Elisof' : 'Элисоф', 
+    description: language === 'uz' ? 'Elektron savdo platformasi' : language === 'en' ? 'Marketplace' : 'Цифровая торговая платформа', 
+    link: 'https://elisof.vercel.app/uz', 
+    image: 'https://sensus.kz/web/site/assets/img/style/logo_sensus.svg', 
+    comingSoon: false
   },
   { 
-    title: language === 'uz' ? 'Loyiha 3' : language === 'en' ? 'Project 3' : 'Проект 3', 
-    description: language === 'uz' ? 'Tez orada' : language === 'en' ? 'Coming soon' : 'Скоро', 
-    link: '#', 
-    image: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&h=600&fit=crop', 
-    comingSoon: true 
+    title: language === 'uz' ? 'Itv' : language === 'en' ? 'Itv' : 'Итв', 
+    description: language === 'uz' ? 'Onlayn kinoteatr' : language === 'en' ? 'Streaming platform' : 'Онлайн-кинотеатр', 
+    link: 'https://itv-00.vercel.app/#/', 
+    image: 'https://itv-00.vercel.app/static/media/itv.5e956d3c155f5695df762ab26a3cc798.svg', 
+    comingSoon: false 
   },
   { 
     title: language === 'uz' ? 'Loyiha 4' : language === 'en' ? 'Project 4' : 'Проект 4', 

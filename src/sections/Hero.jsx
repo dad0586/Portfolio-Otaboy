@@ -1,5 +1,6 @@
 import React from 'react';
-import { Github, Linkedin, Mail, Download } from 'lucide-react';
+import { Github, Linkedin, Send, Mail,  Download } from 'lucide-react';
+import profileImage from '../assets/img/profile.jpg';
 
 const Hero = ({ isDark, t, scrollToSection }) => {
   return (
@@ -28,8 +29,9 @@ const Hero = ({ isDark, t, scrollToSection }) => {
                 {t.hero.cta}
               </button>
               <a 
-                href="/cv.pdf" 
-                download 
+                href="/RakhmonovOtaboyCV.pdf" 
+                download = "RakhmonovOtaboyCV.pdf"
+                 
                 className={`px-8 py-3.5 border-2 ${isDark ? 'border-cyan-400 text-cyan-400 hover:bg-cyan-400/10' : 'border-blue-600 text-blue-600 hover:bg-blue-50'} rounded-lg font-semibold transition-all flex items-center justify-center gap-2 hover:scale-105`}
               >
                 <Download className="w-5 h-5" />
@@ -45,6 +47,14 @@ const Hero = ({ isDark, t, scrollToSection }) => {
                 className={`p-3.5 rounded-lg ${isDark ? 'bg-slate-800 hover:bg-slate-700 text-cyan-400' : 'bg-gray-200 hover:bg-gray-300 text-blue-600'} transition-all hover:scale-110`}
               >
                 <Github className="w-6 h-6" />
+              </a>
+              <a 
+                href="https://t.me/dad0586" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className={`p-3.5 rounded-lg ${isDark ? 'bg-slate-800 hover:bg-slate-700 text-cyan-400' : 'bg-gray-200 hover:bg-gray-300 text-blue-600'} transition-all hover:scale-110`}
+              >
+                <Send className="w-6 h-6" />
               </a>
               <a 
                 href="https://www.linkedin.com/in/otaboy-rakhmonov-65a823215/" 
@@ -67,9 +77,8 @@ const Hero = ({ isDark, t, scrollToSection }) => {
             <div className={`absolute inset-0 bg-gradient-to-r ${isDark ? 'from-cyan-500 to-blue-600' : 'from-blue-600 to-cyan-600'} rounded-full blur-3xl opacity-30 animate-pulse`}></div>
             <div className={`relative w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80 rounded-full overflow-hidden border-4 ${isDark ? 'border-slate-700' : 'border-gray-300'} shadow-2xl`}>
               <img 
-                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%2306b6d4;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%232563eb;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23g)' width='300' height='300'/%3E%3Ctext x='150' y='160' font-size='100' text-anchor='middle' fill='white' font-weight='bold'%3EOR%3C/text%3E%3C/svg%3E" 
-                alt="Profile" 
-                className="w-full h-full object-cover" 
+                 src={profileImage} alt="Otaboy Rakhmonov"
+                 className="w-full h-full object-cover" 
               />
             </div>
           </div>

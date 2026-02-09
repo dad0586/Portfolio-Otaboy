@@ -55,7 +55,7 @@ export const getProjects = (language) => [
     comingSoon: false 
   },
   { 
-    title: language === 'uz' ? 'Loyiha 4' : language === 'en' ? 'Project 4' : 'Проект 4', 
+    title: language === 'uz' ? 'Loyiha' : language === 'en' ? 'Project' : 'Проект', 
     description: language === 'uz' ? 'Tez orada' : language === 'en' ? 'Coming soon' : 'Скоро', 
     link: '#', 
     image: 'https://images.unsplash.com/photo-1551650975-87deedd944c3?w=800&h=600&fit=crop', 

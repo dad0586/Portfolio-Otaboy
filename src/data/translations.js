@@ -54,7 +54,7 @@ export const translations = {
     },
     footer: { 
       rights: "Barcha huquqlar himoyalangan", 
-      made: "React bilan yaratilgan" 
+      // made: "React bilan yaratilgan" 
     }
   },
   en: {
@@ -112,7 +112,7 @@ export const translations = {
     },
     footer: { 
       rights: "All rights reserved", 
-      made: "Built with React" 
+      // made: "Built with React" 
     }
   },
   ru: {
@@ -170,7 +170,7 @@ export const translations = {
     },
     footer: { 
       rights: "Все права защищены", 
-      made: "Создано с React" 
+      // made: "Создано с React" 
     }
   }
 };

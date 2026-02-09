@@ -16,7 +16,6 @@ const Contact = ({ isDark, t }) => {
     setIsSubmitting(true);
     setSubmitError(false);
 
-    // Telegram'ga yuboriladigan xabar
     const message = `
 🆕 <b>Yangi Xabar - Portfolio</b>
 
@@ -52,18 +51,18 @@ ${formData.message}
         setSubmitSuccess(true);
         setFormData({ name: '', email: '', message: '' });
         
-        // 5 sekunddan keyin success xabarini o'chirish
+
         setTimeout(() => {
           setSubmitSuccess(false);
         }, 5000);
       } else {
-        // Xatolik yuz berdi
+
         console.error('Telegram API xatosi:', data);
         setSubmitError(true);
         setTimeout(() => setSubmitError(false), 5000);
       }
     } catch (error) {
-      // Network yoki boshqa xatolik
+
       console.error('Xabar yuborishda xatolik:', error);
       setSubmitError(true);
       setTimeout(() => setSubmitError(false), 5000);
@@ -152,14 +151,14 @@ ${formData.message}
             {isSubmitting ? t.contact.sending : t.contact.send}
           </button>
           
-          {/* Success xabari */}
+
           {submitSuccess && (
             <div className={`p-4 rounded-xl ${isDark ? 'bg-green-500/10 border border-green-500/50 text-green-400' : 'bg-green-50 border border-green-200 text-green-700'} text-center font-medium animate-pulse`}>
               ✅ {t.contact.success}
             </div>
           )}
 
-          {/* Error xabari */}
+
           {submitError && (
             <div className={`p-4 rounded-xl ${isDark ? 'bg-red-500/10 border border-red-500/50 text-red-400' : 'bg-red-50 border border-red-200 text-red-700'} text-center font-medium`}>
               ❌ Xatolik yuz berdi. Iltimos qayta urinib ko'ring.

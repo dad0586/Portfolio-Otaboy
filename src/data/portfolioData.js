@@ -103,7 +103,7 @@ export const getExperiences = (language) => [
     ] 
   },
   { 
-    title: 'IT-Park', 
+    title: language === 'uz' ? 'IT-Park (Amaliyot)' : language === 'en' ? 'IT-Park (Intern)' : 'IT-Park (Стажёр)' , 
     role: language === 'uz' ? 'JavaScript Dasturchi' : language === 'en' ? 'JavaScript Developer' : 'JavaScript Разработчик', 
     period: language === 'uz' ? 'Mart 2024 - Iyun 2024' : language === 'en' ? 'March 2024 - June 2024' : 'Март 2024 - Июнь 2024', 
     location: language === 'uz' ? 'Xorazm' : language === 'en' ? 'Khorezm' : 'Хорезм', 
@@ -118,22 +118,22 @@ export const getExperiences = (language) => [
       'Работа с Material UI'
     ] 
   },
-  { 
-    title: 'IT-Forelead LLC', 
-    role: language === 'uz' ? 'React Dasturchi' : language === 'en' ? 'React Developer' : 'React Разработчик', 
-    period: language === 'uz' ? 'Yanvar 2023 - Iyun 2023' : language === 'en' ? 'January 2023 - June 2023' : 'Январь 2023 - Июнь 2023', 
-    location: language === 'uz' ? 'Xorazm' : language === 'en' ? 'Khorezm' : 'Хорезм', 
-    tasks: language === 'uz' ? [
-      'React.js bilan komponentlar yaratish', 
-      'Pixel-perfect web sahifalar'
-    ] : language === 'en' ? [
-      'Developed React.js components', 
-      'Built pixel-perfect pages'
-    ] : [
-      'Разработка React.js компонентов', 
-      'Создание pixel-perfect страниц'
-    ] 
-  }
+  // { 
+  //   title: 'IT-Forelead LLC', 
+  //   role: language === 'uz' ? 'React Dasturchi' : language === 'en' ? 'React Developer' : 'React Разработчик', 
+  //   period: language === 'uz' ? 'Yanvar 2023 - Iyun 2023' : language === 'en' ? 'January 2023 - June 2023' : 'Январь 2023 - Июнь 2023', 
+  //   location: language === 'uz' ? 'Xorazm' : language === 'en' ? 'Khorezm' : 'Хорезм', 
+  //   tasks: language === 'uz' ? [
+  //     'React.js bilan komponentlar yaratish', 
+  //     'Pixel-perfect web sahifalar'
+  //   ] : language === 'en' ? [
+  //     'Developed React.js components', 
+  //     'Built pixel-perfect pages'
+  //   ] : [
+  //     'Разработка React.js компонентов', 
+  //     'Создание pixel-perfect страниц'
+  //   ] 
+  // }
 ];
 
 export const getEducation = (language) => [
